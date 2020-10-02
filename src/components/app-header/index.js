@@ -28,7 +28,7 @@ export default memo(function ZHAppHeader() {
       <HeaderWrapper>
         <div className="content wrap-v1">
           <HeaderLeft>
-            <a href="#/" className="logo sprite_01">网易云音乐</a>
+            <a href="#/discover" className="logo sprite_01">网易云音乐</a>
             <div className="select-list">
               {
                 headerLinks.map((item, index) => {
