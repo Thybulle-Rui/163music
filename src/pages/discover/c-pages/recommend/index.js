@@ -4,19 +4,26 @@ import ZHHotRecommend from "./c-cpns/hot-recommend";
 import ZHTopBanners from './c-cpns/top-banners'
 import ZHNewAlbum from './c-cpns/new-album'
 import ZHRanking from './c-cpns/ranking'
+import ZHUserLogin from './c-cpns/user-login'
+import ZHSettleSinger from './c-cpns/settle-singer'
+import ZHHotAnchor from './c-cpns/hot-anchor'
 
 function ZHRecommend() {
   return (
     <div>
       <RecommendWrapper>
         <ZHTopBanners></ZHTopBanners>
-        <Content>
-          <RecommendLeft className="wrap-v2">
+        <Content className="wrap-v2">
+          <RecommendLeft>
             <ZHHotRecommend />
             <ZHNewAlbum />
             <ZHRanking />
           </RecommendLeft>
-          <RecommendRight></RecommendRight>
+          <RecommendRight>
+            <ZHUserLogin />
+            <ZHSettleSinger />
+            <ZHHotAnchor />
+          </RecommendRight>
         </Content>
       </RecommendWrapper>
     </div>

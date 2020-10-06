@@ -1,0 +1,1 @@
+export const CHANGE_SONG_DETAIL = "CHANGE_SONG_DETAIL"
